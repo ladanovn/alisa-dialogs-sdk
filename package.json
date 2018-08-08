@@ -1,9 +1,10 @@
 {
     "private": true,
     "scripts": {
-        "start": "node index.js"
+        "start": "micro -l tcp://0.0.0.0:8000"
     },
     "dependencies": {
+        "micro": "^9.3.2",
         "mqtt": "^2.18.3",
         "yandex-dialogs-sdk": "^1.5.2"
     }

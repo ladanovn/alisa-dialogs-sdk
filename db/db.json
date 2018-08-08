@@ -5,7 +5,12 @@
             {
                 "device_id": "koZxm8bjVkUSvaz",
                 "type": "light",
-                "names": ["кухня"],
+                "image": {
+                    "id": "937455/c72c3c5848e4ef9b61d7",
+                    "origUrl": "https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2018/06/20/goods-img/1529469716585565185.jpg"
+                },
+                "name": "Xiaomi YEELIGHT YLDP06YL 10Вт RGB E27 16",
+                "namespace": ["кухня"],
                 "payload": {
                     "turn": "off"
                 }
@@ -13,7 +18,12 @@
             {
                 "device_id": "brI6YDEjDFD7x0b",
                 "type": "light",
-                "names": ["спальня"],
+                "image": {
+                    "id": "997614/003251359a15b1d266be",
+                    "origUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcREa-NDY31pUZ3jXERdqZgbnHpRPKGFsWKRt2Puxdka5M2ykQE7ZtyWEvgdO9bY9xlPkfPbsFNe6pYz-lWxOTlA2u6KAoFA59pRkDlzcWnIkt-g-qPOteJB&usqp=CAE"
+                },
+                "name": "Xiaomi Philips zhirui bulb light",
+                "namespace": ["спальня"],
                 "payload": {
                     "turn": "off"
                 }
@@ -21,14 +31,28 @@
             {
                 "device_id": "jL6V9p0ZRPr8KxM",
                 "type": "light",
-                "names": ["спальня", "ночник"],
+                "image":{
+                    "id": "1030494/d3835d4938f3b3d3f6c8",
+                    "origUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTagbRsz79w30Dm7JAO3wHgRUCXSJz9FpFYv2pQPiLg5t43S80ody9GhdYK9My-hCc0h714Lh6ePkIiu5OTNTTLNYzFposwqULID0hLnrH6jety0mEWdRtk&usqp=CAE"
+                }, 
+                "name": "Лампочка Mixberry E27",
+                "namespace": ["спальня", "ночник"],
                 "payload": {
                     "turn": "off"
                 }
             },
             {
                 "device_id": "QfLoQJurzntIoXg",
-                "type": "other"
+                "type": "kettle",
+                "image":{
+                    "id": "997614/22bc43f31b76c58b9244",
+                    "origUrl": "https://avatars.mds.yandex.net/get-mpic/199079/img_id8765047790664782317/orig"
+                },
+                "name": "Чайник REDMOND RK-G178",
+                "namespace": ["кухня"],
+                "payload": {
+                    "turn":"off"
+                }
             }
         ]
     }
