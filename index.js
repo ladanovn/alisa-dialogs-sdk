@@ -1,6 +1,8 @@
 const Alice = require('yandex-dialogs-sdk')
-const db = require('./db/db.json');
 const alice = new Alice()
+
+const db = require('./db/db.json');
+const mqtt = require('./mqtt/index');
 
 const { button, reply } = Alice
 
@@ -55,7 +57,10 @@ alice.command('включи свет', ctx => {
 
   for (let device of user.user_devices){
     if (device.type === 'light') {
-      // mqtt request
+      mqtt.publish('alisa', JSON.stringify({
+        deviceId: device.device_id,
+        turn: 'on'
+      }))
     }
   };
 
