@@ -1,0 +1,35 @@
+[
+    {
+        "user_id": "aDjweWo4WTpsWuo",
+        "user_devices": [
+            {
+                "device_id": "koZxm8bjVkUSvaz",
+                "type": "light",
+                "names": ["кухня"],
+                "payload": {
+                    "turn": "off"
+                }
+            },
+            {
+                "device_id": "brI6YDEjDFD7x0b",
+                "type": "light",
+                "names": ["спальня"],
+                "payload": {
+                    "turn": "off"
+                }
+            },
+            {
+                "device_id": "jL6V9p0ZRPr8KxM",
+                "type": "light",
+                "names": ["спальня", "ночник"],
+                "payload": {
+                    "turn": "off"
+                }
+            },
+            {
+                "device_id": "QfLoQJurzntIoXg",
+                "type": "other"
+            }
+        ]
+    }
+]

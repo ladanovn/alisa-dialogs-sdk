@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "mqtt": "^2.18.3",
+        "yandex-dialogs-sdk": "^1.5.2"
+    }
+}
