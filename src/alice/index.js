@@ -1,35 +1,41 @@
-const Alice = require('yandex-dialogs-sdk')
+import Alice from 'yandex-dialogs-sdk';
+
+import * as light from './command/light';
+import welcome from './command/welcome';
+import skills from './command/skills';
+import myDevices from './command/my-devices';
+import any from './command/any';
+
 const alice = new Alice()
-
-const welcome = require('./command/welcome');
-const skills = require('./command/skills');
-const myDevices = require('./command/my-devices');
-const light = require('./command/light');
-const any = require('./command/any');
-
 alice.welcome(welcome);
-alice.command('Что ты умеешь ?', skills);
+
+alice.command(ctx => {
+  return ['Что ты умеешь ?',
+          'Помощь'].includes(ctx.message)
+}, skills);
+
 alice.command(ctx => {
   return ['Показать мои устройства.', 
           'Показать ваши устройства.',
           'Что у меня есть?'].includes(ctx.message)
 }, myDevices);
 
-alice.command(ctx => {
-  return ['Включить свет.',
-          'Включи свет.'].includes(ctx.message)
-          }, light.turnOn);
+alice.command(ctx => { 
+  return ctx.message.search(/^Вкл[а-я]* свет.?$/i) !== -1 
+}, light.turnOn);
+
+alice.command(ctx => { 
+  return ctx.message.search(/^Выкл[а-я]* свет.?$/i) !== -1 
+}, light.turnOff);
 
 alice.command(ctx => {
-  return ['Выключить свет.',
-          'Выключи свет.'].includes(ctx.message)
-          }, light.turnOff);
+  return ctx.message.search(/^Вкл[а-я]* свет (на|в) [а-я]+.?$/) !== -1
+}, light.turnOnWhere);
 
-alice.command('Включи свет ${where}.', light.turnOn);          
-alice.command('Включить свет ${where}.', light.turnOn)
-alice.command('Выключи свет ${where}.', light.turnOff);
-alice.command('Выключить свет ${where}.', light.turnOff);
-      
+alice.command(ctx => {
+  return ctx.message.search(/^Выкл[а-я]* свет (на|в) [а-я]+.?$/) !== -1
+}, light.turnOffWhere);
+
 alice.any(any);
 
-module.exports = alice;
+export default alice;

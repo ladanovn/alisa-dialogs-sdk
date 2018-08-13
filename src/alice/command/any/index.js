@@ -1,8 +1,6 @@
-const { button, reply } = require('yandex-dialogs-sdk');
-const { sample } = require('lodash');
+import { sample } from 'lodash';
 
-module.exports = (ctx) => {
-	
+export default function (ctx) {
   ctx.reply(`${sample(['Увы, я пока не знакома с этой командой.',
              'Я не знаю эту команду.',
              'Я вас не поняла.'])}`)

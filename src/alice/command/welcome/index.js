@@ -1,7 +1,6 @@
-const { button, reply } = require('yandex-dialogs-sdk');
+import { button, reply } from 'yandex-dialogs-sdk';
 
-module.exports = (ctx) => {
-	
+export default function(ctx) {	
 	const replyMsg = reply({
 				text: `Привет! Тебя приветствует Home Bot. \n 
 				       Чем я могу быть полезена ?`,

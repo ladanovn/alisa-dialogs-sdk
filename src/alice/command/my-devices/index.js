@@ -1,8 +1,7 @@
-const { button, reply } = require('yandex-dialogs-sdk');
-const db = require('../../../db/index.json');
-const mqtt = require('../../../mqtt');
+import { reply } from 'yandex-dialogs-sdk';
+import db from '../../../db/index.json';
 
-module.exports = async (ctx) => {
+export default async function (ctx) {
   const user = db[0];
   const msg = {
     text: "Ваши устройства",
@@ -24,5 +23,4 @@ module.exports = async (ctx) => {
     
   const replyMsg = reply(msg);
   ctx.reply(replyMsg);
-          
 }
