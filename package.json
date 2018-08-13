@@ -4,6 +4,7 @@
         "start": "node index"
     },
     "dependencies": {
+        "lodash": "^4.17.10",
         "mqtt": "^2.18.3",
         "yandex-dialogs-sdk": "^1.5.2"
     }

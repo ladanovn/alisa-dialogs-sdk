@@ -9,7 +9,7 @@
                     "id": "937455/c72c3c5848e4ef9b61d7",
                     "origUrl": "https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2018/06/20/goods-img/1529469716585565185.jpg"
                 },
-                "name": "Xiaomi YEELIGHT YLDP06YL 10Вт RGB E27 16",
+                "name": "Лампочка Xiaomi YEELIGHT YLDP06YL 10Вт RGB E27 16",
                 "namespace": ["кухня"],
                 "payload": {
                     "turn": "off"
@@ -22,7 +22,7 @@
                     "id": "997614/003251359a15b1d266be",
                     "origUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcREa-NDY31pUZ3jXERdqZgbnHpRPKGFsWKRt2Puxdka5M2ykQE7ZtyWEvgdO9bY9xlPkfPbsFNe6pYz-lWxOTlA2u6KAoFA59pRkDlzcWnIkt-g-qPOteJB&usqp=CAE"
                 },
-                "name": "Xiaomi Philips zhirui bulb light",
+                "name": "Лампочка Xiaomi Philips zhirui bulb light",
                 "namespace": ["спальня"],
                 "payload": {
                     "turn": "off"
@@ -36,7 +36,7 @@
                     "origUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTagbRsz79w30Dm7JAO3wHgRUCXSJz9FpFYv2pQPiLg5t43S80ody9GhdYK9My-hCc0h714Lh6ePkIiu5OTNTTLNYzFposwqULID0hLnrH6jety0mEWdRtk&usqp=CAE"
                 }, 
                 "name": "Лампочка Mixberry E27",
-                "namespace": ["спальня", "ночник"],
+                "namespace": ["спальня"],
                 "payload": {
                     "turn": "off"
                 }
