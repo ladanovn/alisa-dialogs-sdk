@@ -16,24 +16,15 @@ async function turn(ctx, state_turn) {
 
   let user = db[0];
   let where = '';
-
-  if (ctx.body){
-    switch(ctx.body.where){
-      case 'кухне': 
-        where = 'кухня';
-        break;
-      case 'кухне':
-        where = 'кухня';
-        break;
-      case 'спальне':
-        where = 'спальня';
-        break;
-    }
+  if (ctx.body) {
+    where = ctx.body.where || '';
   }
 
   for (let device of user.user_devices) {
+    const re = new RegExp(device.namespace, "i");
+
     if ((device.type === 'light') && 
-          ((device.namespace.includes(where)) || (where === ''))) {
+          ((where.search(re)!== -1) || (where === ''))) {
 
       mqtt.publish('/alisa', JSON.stringify({
         deviceId: device.device_id,

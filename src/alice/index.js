@@ -25,10 +25,10 @@ alice.command(ctx => {
           'Выключи свет.'].includes(ctx.message)
           }, light.turnOff);
 
-alice.command('Включи свет в ${where}.', light.turnOn);          
-alice.command('Включить свет в ${where}.', light.turnOn)
-alice.command('Выключи свет в ${where}.', light.turnOff);
-alice.command('Выключить свет в ${where}.', light.turnOff);
+alice.command('Включи свет ${where}.', light.turnOn);          
+alice.command('Включить свет ${where}.', light.turnOn)
+alice.command('Выключи свет ${where}.', light.turnOff);
+alice.command('Выключить свет ${where}.', light.turnOff);
       
 alice.any(any);
 
